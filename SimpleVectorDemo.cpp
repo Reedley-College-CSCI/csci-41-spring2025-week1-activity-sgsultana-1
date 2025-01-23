@@ -10,7 +10,7 @@ int main()
 
     // Create 2 SimpleVectors of ints.
     SimpleVector<int> intTable(SIZE);
-    SimpleVector<int> intTableA(SIZE);
+    SimpleVector<int> intTable2(SIZE);
 
     // Create a SimpleVector of doubles.
     SimpleVector<double> doubleTable(SIZE);
@@ -21,7 +21,7 @@ int main()
     for (count = 0; count < SIZE; count++)
     {
         intTable[count] = (count * 2);
-		intTableA[count] = (count * 5);
+		intTable2[count] = (count * 5);
         doubleTable[count] = (count * 2.14);
     }
 
@@ -32,9 +32,9 @@ int main()
         cout << intTable[count] << " ";
 
 	    cout << endl;
-        cout << "These values are in intTableA:\n";
+        cout << "These values are in intTable2:\n";
         for (count = 0; count < SIZE; count++)
-            cout << intTableA[count] << " ";
+            cout << intTable2[count] << " ";
 
         cout << endl;
 
